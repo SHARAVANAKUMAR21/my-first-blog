@@ -2,12 +2,13 @@
 
 {% block content %}
     <article class="post">
-        {% if post.published_date %}
-            <time class="date">
-                {{ post.published_date }}
-            </time>
-        {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
+
+        {% if post.youtube_url %}
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I2wvhRUVNTM" allowfullscreen></iframe>
+            </div>
+        {% endif %}
     </article>
 {% endblock %}
