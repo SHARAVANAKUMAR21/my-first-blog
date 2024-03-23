@@ -8,7 +8,8 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    youtube_url = models.URLField(blank=True, null=True)  # Add this line
+    youtube_url = models.URLField(blank=True, null=True)
+    # Add this line
 
     def publish(self):
         self.published_date = timezone.now()
