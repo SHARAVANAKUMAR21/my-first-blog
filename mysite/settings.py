@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        os.environ.get('DATABASE_URL', "postgresql://django_a4wf_user:1Kvfqn8SAuXk5ui8wKPzjdZeTwFnkc85@dpg-crfan65ds78s73cjpu00-a.singapore-postgres.render.com/django_a4wf")
+        os.environ.get('DATABASE_URL', "postgresql://mypsql_v5ck_user:HgiJbkpA7QsFIPQ5I3zk0NbHI05LtL48@dpg-crfb573gbbvc73c1nkd0-a.singapore-postgres.render.com/mypsql_v5ck")
     )
 }
 
